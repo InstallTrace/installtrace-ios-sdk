@@ -1,0 +1,6 @@
+framework module InstalltraceSDK {
+  umbrella header "InstalltraceSDK.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j8m-CS-ppJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4TR-6J-vNU">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="j8m-CS-ppJ" customClass="ViewController" customModule="InstalltraceDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oav-wT-sfX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Installtrace" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGC-D2-xdA">
+                                <rect key="frame" x="20" y="258" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoK-FF-f6a">
+                                <rect key="frame" x="149" y="312" width="116" height="30"/>
+                                <state key="normal" title="GetInstallParams"/>
+                                <connections>
+                                    <action selector="getParamsAction:" destination="j8m-CS-ppJ" eventType="touchUpInside" id="f8A-wX-t2S"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="R50-rq-MIR">
+                                <rect key="frame" x="167" y="148" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Ejr-NI-7y8"/>
+                                    <constraint firstAttribute="width" constant="80" id="lap-5V-6IC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P7w-EB-zvr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iGC-D2-xdA" firstAttribute="top" secondItem="R50-rq-MIR" secondAttribute="bottom" constant="30" id="0eL-2x-Bjm"/>
+                            <constraint firstItem="yoK-FF-f6a" firstAttribute="top" secondItem="iGC-D2-xdA" secondAttribute="bottom" constant="30" id="241-Je-wDd"/>
+                            <constraint firstItem="R50-rq-MIR" firstAttribute="top" secondItem="P7w-EB-zvr" secondAttribute="top" constant="100" id="9YX-p6-SF0"/>
+                            <constraint firstItem="iGC-D2-xdA" firstAttribute="leading" secondItem="P7w-EB-zvr" secondAttribute="leading" constant="20" id="KMH-65-F17"/>
+                            <constraint firstItem="R50-rq-MIR" firstAttribute="centerX" secondItem="Oav-wT-sfX" secondAttribute="centerX" id="KzO-k5-HwT"/>
+                            <constraint firstItem="iGC-D2-xdA" firstAttribute="centerX" secondItem="Oav-wT-sfX" secondAttribute="centerX" id="RN1-8q-zVm"/>
+                            <constraint firstItem="P7w-EB-zvr" firstAttribute="trailing" secondItem="iGC-D2-xdA" secondAttribute="trailing" constant="20" id="cqs-Yo-e7I"/>
+                            <constraint firstItem="yoK-FF-f6a" firstAttribute="centerX" secondItem="Oav-wT-sfX" secondAttribute="centerX" id="i3n-ne-cnH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="puS-L3-VvW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="31"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="1024" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
