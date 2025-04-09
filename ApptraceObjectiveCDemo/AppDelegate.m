@@ -1,17 +1,17 @@
 #import "AppDelegate.h"
-#import <InstalltraceSDK/InstalltraceSDK.h>
+#import <ApptraceSDK/ApptraceSDK.h>
 
-@interface AppDelegate ()<InstalltraceDelegate>
+@interface AppDelegate ()<ApptraceDelegate>
 
 @end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // 禁用InstalltraceSDK访问系统剪贴板，若禁用会影响匹配成功率
-//    [Installtrace disableClipboard];
+    // 禁用ApptraceSDK访问系统剪贴板，若禁用会影响匹配成功率
+//    [Apptrace disableClipboard];
     
-    [Installtrace initWithDelegate:self];
+    [Apptrace initWithDelegate:self];
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"HomeViewController"];
@@ -24,15 +24,15 @@
 // UniversalLink
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
     
-    if ([Installtrace handleUniversalLink:userActivity]) {
+    if ([Apptrace handleUniversalLink:userActivity]) {
         return YES;
     }
     return YES;
 }
 
-#pragma mark - InstalltraceDelegate
+#pragma mark - ApptraceDelegate
 
-- (void)handleWakeUpTrace:(AppInfo * _Nullable)appData {
+- (void)handleWakeUp:(AppInfo * _Nullable)appData {
     if (appData != nil) {
         [self _showResultAlert:@"getWakeUpTrace Success" msg:appData.paramsData];
     } else {

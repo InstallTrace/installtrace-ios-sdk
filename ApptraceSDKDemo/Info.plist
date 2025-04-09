@@ -52,7 +52,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>com.installtrace.appKey</key>
+	<key>cn.apptrace.appKey</key>
 	<string>se3wx47bse</string>
 </dict>
 </plist>

@@ -1,5 +1,5 @@
 #import "HomeViewController.h"
-#import <InstalltraceSDK/InstalltraceSDK.h>
+#import <ApptraceSDK/ApptraceSDK.h>
 
 @interface HomeViewController ()
 
@@ -15,10 +15,10 @@
 - (IBAction)getParamsAction:(id)sender {
     __weak typeof(self) weakSelf = self;
     
-    [Installtrace getInstallTrace:^(AppInfo * _Nullable appdata) {
+    [Apptrace getInstall:^(AppInfo * _Nullable appdata) {
         [weakSelf _showResultAlert:@"getInstallTrace Success" msg:appdata.paramsData];
     } fail:^(NSInteger code, NSString * _Nonnull message) {
-        NSLog(@"Installtrace failed: code：%ld; message：%@", code, message);
+        NSLog(@"Apptrace failed: code：%ld; message：%@", code, message);
         
         [weakSelf _showResultAlert:@"getInstallTrace Failed" msg:message];
     }];

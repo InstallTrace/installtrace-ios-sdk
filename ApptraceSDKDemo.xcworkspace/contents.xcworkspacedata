@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/alex/development/InstallTrace/installtrace-ios-sdk-master/InstalltraceSDKDemo.xcodeproj">
+      location = "group:ApptraceSDKDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ApptraceSDKDemo.xcodeproj">
    </FileRef>
 </Workspace>

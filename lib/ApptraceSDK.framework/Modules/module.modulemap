@@ -1,0 +1,6 @@
+framework module ApptraceSDK {
+  umbrella header "ApptraceSDK.h"
+  export *
+
+  module * { export * }
+}

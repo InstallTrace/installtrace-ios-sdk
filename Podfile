@@ -1,15 +1,15 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '11.0'
 
-target 'InstalltraceObjectiveCDemo' do
+target 'ApptraceObjectiveCDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-#  pod 'InstalltraceSDK'
+#  pod 'ApptraceSDK'
 end
 
-target 'InstalltraceSDKDemo' do
+target 'ApptraceSDKDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-#  pod 'InstalltraceSDK'
+#  pod 'ApptraceSDK'
 
 end

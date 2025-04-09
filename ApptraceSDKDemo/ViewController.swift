@@ -1,5 +1,5 @@
 import UIKit
-import InstalltraceSDK
+import ApptraceSDK
 
 class ViewController: UIViewController {
 
@@ -8,7 +8,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func getParamsAction(_ sender: Any) {
-        Installtrace.getInstallTrace ({[weak self] (appData: AppInfo?) in
+        Apptrace.getInstall ({[weak self] (appData: AppInfo?) in
             guard let self = self else {
                 return
             }

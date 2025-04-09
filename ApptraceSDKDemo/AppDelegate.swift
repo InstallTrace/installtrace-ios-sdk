@@ -1,5 +1,5 @@
 import UIKit
-import InstalltraceSDK
+import ApptraceSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -7,10 +7,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // 禁用InstalltraceSDK访问系统剪贴板，若禁用会影响匹配成功率
-//        Installtrace.disableClipboard()
+        // 禁用ApptraceSDK访问系统剪贴板，若禁用会影响匹配成功率
+//        Apptrace.disableClipboard()
         
-        Installtrace.initWith(self)
+        Apptrace.initWith(self)
         
         setUpWindow()
         
@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // UniversalLink
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        if (Installtrace.handleUniversalLink(userActivity)) {
+        if (Apptrace.handleUniversalLink(userActivity)) {
             return true;
         }
         
@@ -34,9 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-extension AppDelegate: InstalltraceDelegate {
+extension AppDelegate: ApptraceDelegate {
     
-    func handleWakeUpTrace(_ appData: AppInfo?) {
+    func handleWakeUp(_ appData: AppInfo?) {
         if let appData = appData {
             _showWakeResult(title: "getWakeUpTrace", msg:"success, param: \(appData.paramsData ?? "")")
         } else {

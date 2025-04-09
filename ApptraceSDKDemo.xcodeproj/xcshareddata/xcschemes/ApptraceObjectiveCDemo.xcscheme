@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "055D174C244E84FF00C44DDA"
-               BuildableName = "InstalltraceDemo.app"
-               BlueprintName = "InstalltraceSDKDemo"
-               ReferencedContainer = "container:InstalltraceSDKDemo.xcodeproj">
+               BlueprintIdentifier = "058BF4ED2480F6C600FDA2E2"
+               BuildableName = "ApptraceObjectiveCDemo.app"
+               BlueprintName = "ApptraceObjectiveCDemo"
+               ReferencedContainer = "container:ApptraceSDKDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "055D174C244E84FF00C44DDA"
-            BuildableName = "InstalltraceDemo.app"
-            BlueprintName = "InstalltraceSDKDemo"
-            ReferencedContainer = "container:InstalltraceSDKDemo.xcodeproj">
+            BlueprintIdentifier = "058BF4ED2480F6C600FDA2E2"
+            BuildableName = "ApptraceObjectiveCDemo.app"
+            BlueprintName = "ApptraceObjectiveCDemo"
+            ReferencedContainer = "container:ApptraceSDKDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "055D174C244E84FF00C44DDA"
-            BuildableName = "InstalltraceDemo.app"
-            BlueprintName = "InstalltraceSDKDemo"
-            ReferencedContainer = "container:InstalltraceSDKDemo.xcodeproj">
+            BlueprintIdentifier = "058BF4ED2480F6C600FDA2E2"
+            BuildableName = "ApptraceObjectiveCDemo.app"
+            BlueprintName = "ApptraceObjectiveCDemo"
+            ReferencedContainer = "container:ApptraceSDKDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
